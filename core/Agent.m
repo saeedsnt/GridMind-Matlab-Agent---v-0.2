@@ -150,7 +150,7 @@ classdef Agent < handle
                 case 'stability'
                     obj.activeModule = StabilityModule();
                 case 'renewable_integration'
-                    obj.activeModule = RenewableModule();
+                    obj.activeModule = RenewableIntegrationModule();
                 otherwise
                     error('Unknown domain: %s', domainName);
             end
